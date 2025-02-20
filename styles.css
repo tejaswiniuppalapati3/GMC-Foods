@@ -1,0 +1,160 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+h1, h2, h3 {
+    color: #f8b400;
+}
+
+p {
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #fab700;
+    color: white;
+    padding: 20px;
+}
+
+.logo {
+    width: 200px; /* Adjust the size as needed */
+    height: auto; /* Maintains aspect ratio */
+    display: block;
+    margin: 0 auto; /* Centers the logo */
+}
+
+
+/* Hero Section */
+.banner {
+    width: 100vw;  /* Expands full width */
+    height: 100vh; /* Full screen height */
+    background-image: url("images/banner.jpg");
+    background-size: cover; /* Covers the full screen */
+    background-position: center center; /* Keeps the image centered */
+    background-repeat: no-repeat;
+}
+
+
+.hero img {
+    width: 100%; /* Expands the image fully */
+    height: auto; /* Maintains aspect ratio */
+    object-fit: cover; /* Ensures full display without distortion */
+}
+
+
+.hero button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background: #f8b400;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.hero button:hover {
+    background: #d98c00;
+}
+
+/* Services Section */
+.services {
+    padding: 40px;
+    background: white;
+}
+
+.service-box {
+    display: inline-block;
+    width: 30%;
+    padding: 20px;
+}
+
+.service-box img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Contact Section */
+.contact {
+    padding: 40px;
+    background: #222;
+    color: white;
+}
+
+.contact form input, .contact form textarea {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    display: block;
+}
+
+
+/* Order Form */
+.order {
+    padding: 40px;
+    background-color: #fff;
+}
+
+.order form {
+    width: 300px;
+    margin: 0 auto;
+    background: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.order input, .order select, .order textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.order button {
+    background-color: #f8b400;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.order button:hover {
+    background-color: #d98c00;
+}
+
+/* Contact Section */
+.contact {
+    padding: 40px;
+    background-color: #f4f4f4;
+}
+
+/* Footer */
+footer {
+    background-color: #222;
+    color: white;
+    padding: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .service-box {
+        width: 90%;
+    }
+
+    .order form {
+        width: 90%;
+    }
+
+    .hero img {
+        max-height: 250px;
+    }
+}
